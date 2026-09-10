@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a personal portfolio of Jyoti Khanam">
+    <title>Jyoti Khanam - Professional Web Developer</title>
+    <link rel="preload" as="image" href="Image/Profile Image.jpg" fetchpriority="high">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#hero" class="logo">Jyoti<span>.dev</span></a>
+            
+            <div class="nav-menu" id="nav-menu">
+                <div class="sidebar-header">
+                    <span class="logo">Jyoti<span>.dev</span></span>
+                    <button class="close-btn" id="close-btn" type="button" aria-label="Close navigation menu"><i class="fas fa-times" aria-hidden="true"></i></button>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#hero"><i class="fas fa-house"></i> Home</a></li>
+                    <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+                    <li><a href="#skills"><i class="fas fa-code"></i> Skills</a></li>
+                    <li><a href="#projects"><i class="fas fa-briefcase"></i> Projects</a></li>
+                    <li><a href="#journey"><i class="fas fa-graduation-cap"></i> Journey</a></li>
+                    <li><a href="#testimonials"><i class="fas fa-comment-dots"></i> Testimonials</a></li>
+                    <li><a href="#contact" class="mobile-contact-link"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-right">
+                <button id="theme-toggle" class="theme-btn" type="button" aria-label="Toggle dark and light theme">
+                    <i class="fas fa-moon" aria-hidden="true"></i>
+                </button>
+                <a href="#contact" class="btn primary-btn desktop-contact-btn">Contact Me</a>
+                <button class="hamburger" id="hamburger" type="button" aria-label="Open navigation menu">
+                    <i class="fas fa-bars" aria-hidden="true"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="overlay" id="overlay"></div>
+
+    <section id="hero" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="badge">Welcome to my portfolio</span>
+            <h1>Hi, I'm Jyoti Khanam</h1>
+            <h2>Full Stack Web Developer</h2>
+            <p>Crafting scalable, user-centric web applications and digital experiences with modern web technologies and clean architecture.</p>
+            <div class="hero-btns">
+                <a href="#contact" class="btn primary-btn">Contact Me <i class="fas fa-paper-plane"></i></a>
+                <a href="#projects" class="btn secondary-btn hero-secondary">View Projects <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about section-padding">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-container">
+            <div class="about-image">
+                <img src="Image/Profile Image.jpg" alt="Image">
+            </div>
+            <div class="about-content">
+                <h3>Passionate Developer Transforming Ideas into Digital Reality</h3>
+                <p>With over 5 years of experience in full-stack web development, I specialize in building highly responsive, robust, and accessible web solutions. My approach combines technical excellence with intuitive design principles to deliver exceptional user experiences.</p>
+                <p>I thrive in fast-paced environments, continuously adapting to the latest tech stack trends to keep my clients and projects ahead of the curve.</p>
+                
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <i class="fas fa-smile"></i>
+                        <h4>45+</h4>
+                        <p>Happy Clients</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-check-double"></i>
+                        <h4>85+</h4>
+                        <p>Projects Completed</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-award"></i>
+                        <h4>5+</h4>
+                        <p>Years Experience</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills section-padding">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-header">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML5 & CSS3</h3>
+                </div>
+                <div class="progress-bar"><div class="progress" style="width: 95%;"></div></div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-header">
+                    <i class="fab fa-js"></i>
+                    <h3>JavaScript (ES6+)</h3>
+                </div>
+                <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-header">
+                    <i class="fab fa-react"></i>
+                    <h3>React & Next.js</h3>
+                </div>
+                <div class="progress-bar"><div class="progress" style="width: 88%;"></div></div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-header">
+                    <i class="fab fa-node-js"></i>
+                    <h3>Node.js & Express</h3>
+                </div>
+                <div class="progress-bar"><div class="progress" style="width: 82%;"></div></div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-header">
+                    <i class="fas fa-wind"></i>
+                    <h3>Tailwind CSS</h3>
+                </div>
+                <div class="progress-bar"><div class="progress" style="width: 92%;"></div></div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-header">
+                    <i class="fas fa-database"></i>
+                    <h3>PostgreSQL & MongoDB</h3>
+                </div>
+                <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects section-padding">
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects-grid">
+        
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="Image/Card1.jpg" alt="E-Commerce Analytics Platform">
+                </div>
+                <div class="project-info">
+                    <h3>SaaS Analytics Dashboard</h3>
+                    <p>Real-time analytical interface with interactive charts, financial summaries, and role-based user management.</p>
+                    <div class="tags"><span>React</span><span>Chart.js</span><span>Tailwind</span></div>
+                    <a href="#" class="project-link">View Live <i class="fas fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="Image/Card2.jpg" alt="E-Commerce Storefront">
+                </div>
+                <div class="project-info">
+                    <h3>Luxe E-Commerce Store</h3>
+                    <p>A full-featured online shopping portal complete with cart management, Stripe payments, and admin controls.</p>
+                    <div class="tags"><span>Next.js</span><span>Node.js</span><span>Stripe</span></div>
+                    <a href="#" class="project-link">View Live <i class="fas fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="Image/Card3.jpg" alt="Task Management Web App">
+                </div>
+                <div class="project-info">
+                    <h3>Taskflow Productivity App</h3>
+                    <p>Kanban-style project management software equipped with real-time updates and team collaboration tools.</p>
+                    <div class="tags"><span>React</span><span>Firebase</span><span>CSS Modules</span></div>
+                    <a href="#" class="project-link">View Live <i class="fas fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+    
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="Image/Card4.jpg" alt="Healthcare Portal">
+                </div>
+                <div class="project-info">
+                    <h3>HealthCare Patient Portal</h3>
+                    <p>Secure web application enabling patients to schedule consultations, access medical reports, and message doctors.</p>
+                    <div class="tags"><span>TypeScript</span><span>React</span><span>Express</span></div>
+                    <a href="#" class="project-link">View Live <i class="fas fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+    
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="Image/Card5.jpg" alt="Restaurant Booking Platform">
+                </div>
+                <div class="project-info">
+                    <h3>Gourmet Restaurant Booking</h3>
+                    <p>Interactive table reservation platform with online menu, customer reviews, and automated SMS confirmation.</p>
+                    <div class="tags"><span>Vue.js</span><span>Node.js</span><span>MongoDB</span></div>
+                    <a href="#" class="project-link">View Live <i class="fas fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="Image/Card6.jpg" alt="Crypto Portfolio Tracker">
+                </div>
+                <div class="project-info">
+                    <h3>Crypto Tracker & Exchange</h3>
+                    <p>Live cryptocurrency price tracking dashboard with candlestick charts and real-time market updates via WebSockets.</p>
+                    <div class="tags"><span>React</span><span>Redux</span><span>CryptoAPI</span></div>
+                    <a href="#" class="project-link">View Live <i class="fas fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="view-more-container">
+            <a href="https://github.com/jyotikhanam?tab=repositories" target="_blank" class="btn secondary-btn">View More Projects <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <section id="journey" class="journey section-padding">
+        <h2 class="section-title">Learning & Career Journey</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2020 - 2025</div>
+                <div class="timeline-content">
+                    <h3>B.Sc. in Computer Science & Engineering</h3>
+                    <p>Mastered core concepts including Data Structures, Algorithms, Software Engineering principles, and Database Design.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2023 - 2025</div>
+                <div class="timeline-content">
+                    <h3>Junior Frontend Developer</h3>
+                    <p>Built responsive web layouts, integrated REST APIs, and focused on UI performance optimization in an agile development team.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2024 - Present</div>
+                <div class="timeline-content">
+                    <h3>Full Stuck Web Developer & Freelancer</h3>
+                    <p>Designing and deploying full-stack web applications for global clients while mentoring junior engineers and refining UX standards.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials section-padding">
+        <h2 class="section-title">Client Testimonials</h2>
+        <div class="testimonial-slider-wrapper">
+            <div class="testimonial-slider" id="testimonial-slider">
+            
+                <div class="testimonial-slide active">
+                    <div class="testimonial-card">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p>"Jyoti delivered our enterprise portal ahead of schedule and with zero major bugs. Her attention to user experience detail is top notch!"</p>
+                        <div class="client-info">
+                            <img src="Image/Profile1.jpg" alt="Sarah Jenkins">
+                            <div>
+                                <h3>Sarah Jenkins</h3>
+                                <span>Product Manager, TechCorp</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-slide">
+                    <div class="testimonial-card">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p>"Working with Jyoti was a breeze! She quickly understood our requirements and delivered a sleek, high-performing web application."</p>
+                        <div class="client-info">
+                            <img src="Image/Profile2.jpg" alt="Michael Brown">
+                            <div>
+                                <h3>Michael Brown</h3>
+                                <span>Founder, Innovate Lab</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="testimonial-slide">
+                    <div class="testimonial-card">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p>"Her frontend skills transformed our boring website into an interactive masterpiece. Conversion rates increased by 40% in two weeks!"</p>
+                        <div class="client-info">
+                            <img src="Image/Profile3.jpg" alt="Elena Rostova">
+                            <div>
+                                <h3>Elena Rostova</h3>
+                                <span>Marketing Director, CloudScale</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slider-controls">
+                <button id="prev-testimonial" class="slider-btn" type="button" aria-label="Previous testimonial"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
+                <button id="next-testimonial" class="slider-btn" type="button" aria-label="Next Testimonial"><i class="fas fa-chevron-right" aria-hidden="true"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact section-padding">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-wrapper">
+
+            <div class="contact-info">
+                <h3>Let's talk about your next project!</h3>
+                <p>Feel free to reach out to discuss work opportunities, partnerships, or just to say hi.</p>
+                
+                <div class="info-items">
+                    <div class="info-item">
+                        <i class="fas fa-location-dot"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>Khulna, Bangladesh</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>jyotikhanam039@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+880 1712146485</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/jyoti-khanam-b7379430a/" class="social-btn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/jyotikhanam" class="social-btn" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-btn" title="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-btn" title="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="contact-form-container">
+                <form id="contact-form" onsubmit="handleContactSubmit(event)">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Your Phone Number" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn primary-btn submit-btn">
+                        Send Message <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Jyoti. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
